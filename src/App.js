@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Navigationbar from "./components/Navigationbar";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import {Container } from 'react-bootstrap'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigationbar/>
+      <div className="jumbotron">.....</div>
+      <Container fluid className="p-0">
+      <div id="home" style={{height: 500,background:'red'}}>home</div>
+      <div id="about_me" style={{height: 500,background:'blue'}}>about_me</div>
+      <div id="skills" style={{height: 500,background:'green'}}>skills</div>
+      <div id="projects" style={{height: 500,background:'yellow'}}>projects</div>
+      <div id="contact_me" style={{height: 500,background:'red'}}>contact_me</div>
+      </Container>
     </div>
   );
 }
