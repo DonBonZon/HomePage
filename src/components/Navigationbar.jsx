@@ -10,8 +10,6 @@ export default function Navigationbar() {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ms-auto"> 
-      {// ^^^ aby bylo po lewej zamiast ms dac ml
-      }
         <Nav.Link onClick={() => scroller.scrollTo('home', {offset: -56})}>
           Home
         </Nav.Link>
