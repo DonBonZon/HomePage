@@ -1,29 +1,19 @@
-import Navigationbar from "./components/Navigationbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./app.css";
-import { Container } from "react-bootstrap";
+import Navigationbar from "./components/Navigationbar";
 import Header from "./components/Header";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
       <Navigationbar />
       <Header />
-      {/* <Container fluid className="p-0"> */}
-      <div style={{ height: 500, background: "red" }}>home</div>
-      <div id="about_me" style={{ height: 500, background: "blue" }}>
-        about_me
-      </div>
-      <div id="skills" style={{ height: 500, background: "green" }}>
-        skills
-      </div>
-      <div id="projects" style={{ height: 500, background: "yellow" }}>
-        projects
-      </div>
-      <div id="contact_me" style={{ height: 500, background: "red" }}>
-        contact_me
-      </div>
-      {/* </Container> */}
+      <Skills />
+      <Contact />
+      <Footer />
     </div>
   );
 }

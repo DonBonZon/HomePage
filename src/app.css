@@ -41,6 +41,32 @@
   width: 100%;
   position: absolute;
 }
+
+
+/*********************** SKILLS **************************/
+
+.skill_card{
+  width: 18rem;
+  margin: auto;
+}
+
+
+
+/*********************** FOOTER **************************/
+.footer_wrapper{
+  background:linear-gradient(248deg, rgba(16,7,240,1) 0%, rgba(255,241,0,1) 100%);
+  border-radius: 20px 20px 0px 0px ;
+  position: relative;
+}
+
+.footer_particles{
+  position: absolute;
+  /* bottom: 0; */
+}
+
+
+
+/*********************** MEDIA **************************/
 @media (max-width: 800px) {
   .header_img_l {
     display: none;
